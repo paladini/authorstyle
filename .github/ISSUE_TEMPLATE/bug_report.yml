@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem in AuthorStyle.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include private writing corpora in public issues.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest commands or inputs that reproduce the bug.
+      placeholder: |
+        1. Run `authorstyle ingest ...`
+        2. Run `authorstyle analyze ...`
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Python version, and AuthorStyle version or commit.
+    validations:
+      required: true

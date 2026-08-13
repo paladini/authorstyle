@@ -1,0 +1,10 @@
+# Ignore patterns for corpus ingestion (gitignore-style)
+.git/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+drafts/
+private/

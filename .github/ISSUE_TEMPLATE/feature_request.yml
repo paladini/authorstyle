@@ -1,0 +1,40 @@
+name: Feature request
+description: Propose a new capability or research extension.
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the behavior, CLI change, or architecture change.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - CLI
+        - Ingestion
+        - Stylometry
+        - Style embeddings
+        - Style Card
+        - Generation
+        - Evaluation
+        - Privacy
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and local-first impact
+      description: Does this require network access or new local data storage?
