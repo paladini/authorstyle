@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/), and this
 project uses semantic versioning.
 
+## [0.2.1] - 2026-09-08
+
+### Changed
+
+- Bumped development and runtime dependency minimums (Dependabot batch):
+  `beautifulsoup4`, `rich`, `sentence-transformers`, `ruff`, `hatchling`.
+- Updated GitHub Actions: `actions/checkout` and `actions/setup-python`.
+
 ## [0.1.0] - 2026-08-12
 
 ### Added

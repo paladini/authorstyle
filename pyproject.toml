@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "authorstyle"
-version = "0.1.0"
+version = "0.2.1"
 description = "Local-first research CLI for learning and reproducing personal writing style from a user's corpus."
 readme = "README.md"
 requires-python = ">=3.11"
