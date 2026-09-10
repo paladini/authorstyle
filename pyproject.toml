@@ -41,7 +41,7 @@ dependencies = [
 [project.optional-dependencies]
 embeddings = ["sentence-transformers>=5.7.0"]
 nlp = ["spacy>=3.7"]
-dev = ["pytest>=8.2", "ruff>=0.16.2"]
+dev = ["pytest>=8.2", "ruff>=0.16.6"]
 
 [project.scripts]
 authorstyle = "authorstyle.cli.app:app"
