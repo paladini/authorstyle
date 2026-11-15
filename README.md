@@ -1,6 +1,7 @@
 # AuthorStyle
 
 [![CI](https://github.com/paladini/authorstyle/actions/workflows/ci.yml/badge.svg)](https://github.com/paladini/authorstyle/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/authorstyle.svg)](https://pypi.org/project/authorstyle/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 
@@ -55,7 +56,39 @@ for design and scientific details.
 
 ## Quick start
 
-### Install
+### Install from PyPI
+
+Requires Python 3.11+. Profiling stays on your machine; installing from PyPI
+does not send your corpus anywhere.
+
+```bash
+pip install authorstyle
+```
+
+With [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv pip install authorstyle
+# or, as an isolated CLI:
+uv tool install authorstyle
+```
+
+With [pipx](https://pipx.pypa.io/):
+
+```bash
+pipx install authorstyle
+```
+
+Optional extras (not required for the core local pipeline):
+
+```bash
+pip install "authorstyle[embeddings]"   # sentence-transformers
+pip install "authorstyle[nlp]"          # spaCy
+```
+
+### Development install
+
+Clone only if you are changing the code:
 
 ```bash
 git clone https://github.com/paladini/authorstyle.git
@@ -74,6 +107,8 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -e ".[dev]"
 ```
+
+Publishing a release to PyPI is documented in [docs/publishing.md](docs/publishing.md).
 
 ### Run
 

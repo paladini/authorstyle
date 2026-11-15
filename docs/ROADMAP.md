@@ -10,6 +10,7 @@ community demand. Nothing here is committed to a timeline.
 - Ollama/local LLM generation provider
 - Improved mode evidence warnings and fallback UX
 - More corpus fixtures and evaluation reports
+- PyPI distribution via trusted publishing (`pip install authorstyle`)
 
 ## Medium term
 
