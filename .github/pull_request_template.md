@@ -7,6 +7,7 @@ Describe what changed and why it matters.
 - [ ] `python -m pytest`
 - [ ] `python -m ruff check .`
 - [ ] `authorstyle --help`
+- [ ] `python -m build` and `twine check` (CI also runs this)
 
 ## Checklist
 

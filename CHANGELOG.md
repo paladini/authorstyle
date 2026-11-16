@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/), and this
 project uses semantic versioning.
 
+## [Unreleased]
+
+## [0.2.2] - 2026-11-16
+
+### Added
+
+- PyPI packaging metadata, src-layout sdist/wheel build, and `authorstyle` console script checks in CI.
+- GitHub Actions trusted publishing (OIDC) on `v*` tags; see [docs/publishing.md](docs/publishing.md).
+- README install from PyPI (`pip`, `uv`, `pipx`) while keeping clone + editable install for development.
+
+### Changed
+
+- PyPI project name is `paladini-authorstyle` because `authorstyle` is already
+  taken. Install with `pip install paladini-authorstyle`; the CLI remains
+  `authorstyle`.
+
 ## [0.2.1] - 2026-09-08
 
 ### Changed

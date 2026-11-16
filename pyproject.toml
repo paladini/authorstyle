@@ -3,12 +3,13 @@ requires = ["hatchling>=1.31.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "authorstyle"
-version = "0.2.1"
+name = "paladini-authorstyle"
+version = "0.2.2"
 description = "Local-first research CLI for learning and reproducing personal writing style from a user's corpus."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Fernando Paladini" }]
 keywords = ["stylometry", "writing-style", "local-first", "cli", "llm"]
 classifiers = [
@@ -24,6 +25,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
   "Topic :: Text Processing :: Linguistic",
+  "Typing :: Typed",
 ]
 dependencies = [
   "beautifulsoup4>=4.15.0",
@@ -41,7 +43,7 @@ dependencies = [
 [project.optional-dependencies]
 embeddings = ["sentence-transformers>=5.7.0"]
 nlp = ["spacy>=3.7"]
-dev = ["pytest>=8.2", "ruff>=0.16.2"]
+dev = ["pytest>=8.2", "ruff>=0.16.2", "build>=1.2", "twine>=6.0"]
 
 [project.scripts]
 authorstyle = "authorstyle.cli.app:app"
@@ -52,6 +54,19 @@ Repository = "https://github.com/paladini/authorstyle"
 Issues = "https://github.com/paladini/authorstyle/issues"
 Documentation = "https://github.com/paladini/authorstyle/blob/main/docs/architecture.md"
 Changelog = "https://github.com/paladini/authorstyle/blob/main/CHANGELOG.md"
+PyPI = "https://pypi.org/project/paladini-authorstyle/"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/fixtures",
+  "/docs",
+  "/LICENSE",
+  "/README.md",
+  "/CHANGELOG.md",
+  "/pyproject.toml",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/authorstyle"]
