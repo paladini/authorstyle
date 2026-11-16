@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/authorstyle
+      url: https://pypi.org/p/paladini-authorstyle
     permissions:
       id-token: write
     steps:

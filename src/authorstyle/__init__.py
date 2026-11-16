@@ -3,6 +3,6 @@
 from importlib.metadata import PackageNotFoundError, version
 
 try:
-    __version__ = version("authorstyle")
+    __version__ = version("paladini-authorstyle")
 except PackageNotFoundError:  # pragma: no cover - source tree without install
-    __version__ = "0.2.1"
+    __version__ = "0.2.2"

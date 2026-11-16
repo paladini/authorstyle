@@ -32,10 +32,11 @@ evidence-grounded profiles, and remain testable offline.
    python -m twine check --strict dist/*
    ```
 
-End users should `pip install authorstyle` from PyPI. Clone + editable install
-is for development. Releases are tagged (`v*`) and uploaded with trusted
-publishing — see [docs/publishing.md](docs/publishing.md). Do not add a PyPI
-API token to GitHub secrets.
+End users should `pip install paladini-authorstyle` from PyPI (the `authorstyle`
+name is already taken). Clone + editable install is for development. Releases
+are tagged (`v*`) and uploaded with trusted publishing — see
+[docs/publishing.md](docs/publishing.md). Do not add a PyPI API token to GitHub
+secrets.
 
 ## Contribution guidelines
 
